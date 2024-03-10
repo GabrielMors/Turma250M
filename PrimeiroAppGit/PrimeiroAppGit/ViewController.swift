@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Aqui tem uma label :)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Gabriel Escreveu aqui")
