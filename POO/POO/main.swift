@@ -5,6 +5,9 @@
 //  Created by Gabriel Mors  on 17/03/24.
 //
 
+
+// FINALIZAR O CURSO DO SWIFT DESCOMBLICADO 
+
 import Foundation
 
 
@@ -118,5 +121,19 @@ print(eduardo.name) // Edu
 
 print(gabriel.lastName) // Mors
 print(eduardo.lastName) // Assis
+
+
+// Struct
+
+struct Veiculo {
+    
+    var modelo: String
+    var ano: Int
+    
+    
+}
+
+var carro = Veiculo(modelo: "Porsche", ano: 2019)
+
 
 
