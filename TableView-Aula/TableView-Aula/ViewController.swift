@@ -9,9 +9,16 @@ import UIKit
 
 // TableView é SOMENTE na VERTICAL
 
+//PASSO A PASSO
 
 // 1 - Criar sua tableView
-// 2 - ASSINAR os Protocolos (UItableViewDelegate, UItableViewDataSource)
+// 2 - Fazer a conexão
+// 3 - ASSINAR os Protocolos (UItableViewDelegate, UItableViewDataSource)
+// 4 - Criar sua célula
+// 5 - Criar seu identifier da célula
+// 6 - Registrar sua célula
+// 7 - Popular a célula na tableView
+// 8 - Retornar nossa celula
 
 class ViewController: UIViewController {
 
@@ -25,7 +32,6 @@ class ViewController: UIViewController {
                                 "Gabriel", "Otávio", "Nathália", "Fernando",
                                 "Gabriel", "Otávio", "Nathália", "Fernando",
                                 "Gabriel", "Otávio", "Nathália", "Fernando",
-    
     ]
     
     override func viewDidLoad() {
@@ -41,6 +47,7 @@ class ViewController: UIViewController {
     
     
 }
+
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -66,12 +73,25 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 //        }
     }
     
+    // Permitir que nós possamos editar e fazer configurações na celula
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            // Verifica se a célula a ser removida é um "Funcionário"
+//            if indexPath.row >= 1 {
+//                // Ajusta o indicar
+//                let adjustedIndex = indexPath.row - 1
+//                arrayNames.remove(at: adjustedIndex)
+//                tableView.reloadData()
+//            }
+//        }
+    }
+    
     // Consegue fazer configurações ao clicar na celula
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        print("index da minha célula: \(indexPath.row)")
     }
 }
