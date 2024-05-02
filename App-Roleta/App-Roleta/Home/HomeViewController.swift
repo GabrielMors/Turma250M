@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
     var screen: HomeScreen?
     var personList: [Person] = []
     var imageList: [String] = ["Image-1", "Image-2", "Image-3", "Image-4", "Image-5"]
-    
+    var person: Person?
     
     lazy var alert: AlertController = {
         let alert = AlertController(controller: self)
@@ -33,9 +33,19 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .black
         screen?.configTableView(delegate: self, dataSource: self)
         screen?.delegate = self
+        blockerDrawNumberButton()
     }
 
-
+    private func blockerDrawNumberButton() {
+        if personList.isEmpty {
+            screen?.rafflePeopleButton.isEnabled = false
+            screen?.rafflePeopleButton.alpha = 0.5
+        } else {
+            screen?.rafflePeopleButton.isEnabled = true
+            screen?.rafflePeopleButton.alpha = 1.0
+        }
+    }
+    
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -67,6 +77,19 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return 90
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let person = person, personList[indexPath.row] === person {
+            alert.showAlert(title: "Muito bom!!", message: "Agora é sua vez \(person.name), pague a conta")
+            personList.removeAll()
+        } else {
+            alert.showAlert(title: "Uffa", message: "Voce escapou dessa vez!!")
+            personList.remove(at: indexPath.row)
+        }
+        blockerDrawNumberButton()
+        screen?.tableView.reloadData()
+    }
+    
 }
 
 extension HomeViewController: HomeScreenProtocol {
