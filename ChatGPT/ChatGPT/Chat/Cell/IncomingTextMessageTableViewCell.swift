@@ -23,6 +23,7 @@ class IncomingTextMessageTableViewCell: UITableViewCell {
     lazy var messageLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "GabrielmorsGabrielmorsGabrielmorsGabrielmorsGabrielmorsGabrielmorsGabrielmorsGabrielmorsGabrielmors"
         label.textColor = .white
         label.numberOfLines = 0
         return label
