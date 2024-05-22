@@ -16,6 +16,7 @@
 		C45FC1EC2BC5B2500014E5DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45FC1EB2BC5B2500014E5DF /* User.swift */; };
 		C45FC1F32BC5B3D80014E5DF /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45FC1F12BC5B3D80014E5DF /* UserTableViewCell.swift */; };
 		C45FC1F42BC5B3D80014E5DF /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45FC1F22BC5B3D80014E5DF /* UserTableViewCell.xib */; };
+		C4642CFA2BFE636A009D6F71 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4642CF92BFE6369009D6F71 /* HomeViewModel.swift */; };
 		C4E2549B2BC5BC5C00FDD25F /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E2549A2BC5BC5C00FDD25F /* EmployeeTableViewCell.xib */; };
 		C4E2549C2BC5BC5C00FDD25F /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E254992BC5BC5C00FDD25F /* EmployeeTableViewCell.swift */; };
 		C4E2549E2BC5BEA600FDD25F /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2549D2BC5BEA600FDD25F /* Employee.swift */; };
@@ -33,6 +34,7 @@
 		C45FC1EB2BC5B2500014E5DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C45FC1F12BC5B3D80014E5DF /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		C45FC1F22BC5B3D80014E5DF /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		C4642CF92BFE6369009D6F71 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C4E254992BC5BC5C00FDD25F /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 		C4E2549A2BC5BC5C00FDD25F /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
 		C4E2549D2BC5BEA600FDD25F /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
@@ -109,8 +111,8 @@
 		C45FC1F02BC5B3980014E5DF /* Tela01 */ = {
 			isa = PBXGroup;
 			children = (
-				C45FC1D92BC2D93B0014E5DF /* ViewController.swift */,
-				C45FC1DB2BC2D93B0014E5DF /* Main.storyboard */,
+				C4642CF72BFE6331009D6F71 /* View */,
+				C4642CF82BFE633E009D6F71 /* ViewModel */,
 			);
 			path = Tela01;
 			sourceTree = "<group>";
@@ -122,6 +124,23 @@
 				C45FC1F22BC5B3D80014E5DF /* UserTableViewCell.xib */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		C4642CF72BFE6331009D6F71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C45FC1DB2BC2D93B0014E5DF /* Main.storyboard */,
+				C45FC1D92BC2D93B0014E5DF /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4642CF82BFE633E009D6F71 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4642CF92BFE6369009D6F71 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C4E254982BC5BC3700FDD25F /* Employee */ = {
@@ -209,6 +228,7 @@
 				C45FC1EC2BC5B2500014E5DF /* User.swift in Sources */,
 				C45FC1DA2BC2D93B0014E5DF /* ViewController.swift in Sources */,
 				C45FC1D62BC2D93B0014E5DF /* AppDelegate.swift in Sources */,
+				C4642CFA2BFE636A009D6F71 /* HomeViewModel.swift in Sources */,
 				C4E2549E2BC5BEA600FDD25F /* Employee.swift in Sources */,
 				C45FC1D82BC2D93B0014E5DF /* SceneDelegate.swift in Sources */,
 				C45FC1F32BC5B3D80014E5DF /* UserTableViewCell.swift in Sources */,
