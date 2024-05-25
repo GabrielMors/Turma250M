@@ -17,6 +17,7 @@
 		C46C08CF2BE1873E00908046 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C08CE2BE1873D00908046 /* PersonTableViewCell.swift */; };
 		C46C08D12BE18C3C00908046 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C08D02BE18C3C00908046 /* EmptyTableViewCell.swift */; };
 		C46C08D42BE18CFB00908046 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C08D32BE18CFB00908046 /* AlertController.swift */; };
+		C4D177642C021FE0007F74F4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D177632C021FE0007F74F4 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C46C08CE2BE1873D00908046 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		C46C08D02BE18C3C00908046 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
 		C46C08D32BE18CFB00908046 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		C4D177632C021FE0007F74F4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				C46C08CD2BE1866500908046 /* Cell */,
+				C4D177622C021FB8007F74F4 /* ViewModel */,
 				C46C08C72BE16DE200908046 /* Screen */,
 				C46C08B52BE16B1C00908046 /* HomeViewController.swift */,
 			);
@@ -125,6 +128,14 @@
 				C46C08D32BE18CFB00908046 /* AlertController.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		C4D177622C021FB8007F74F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4D177632C021FE0007F74F4 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C46C08CF2BE1873E00908046 /* PersonTableViewCell.swift in Sources */,
+				C4D177642C021FE0007F74F4 /* HomeViewModel.swift in Sources */,
 				C46C08CC2BE185D000908046 /* Person.swift in Sources */,
 				C46C08C92BE16DF600908046 /* HomeScreen.swift in Sources */,
 				C46C08B62BE16B1C00908046 /* HomeViewController.swift in Sources */,

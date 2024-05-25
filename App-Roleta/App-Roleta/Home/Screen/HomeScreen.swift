@@ -19,8 +19,12 @@ protocol HomeScreenProtocol: AnyObject {
 }
 
 class HomeScreen: UIView {
-
-    var delegate: HomeScreenProtocol?
+    
+    private weak var delegate: HomeScreenProtocol?
+    
+    public func delegate(delegate: HomeScreenProtocol?) {
+        self.delegate = delegate
+    }
     
     lazy var logoImageView: UIImageView = {
         let image = UIImageView()
@@ -64,7 +68,8 @@ class HomeScreen: UIView {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.showsVerticalScrollIndicator = false
         tableView.backgroundColor = .black
-        
+        tableView.register(PersonTableViewCell.self, forCellReuseIdentifier: PersonTableViewCell.identifier)
+        tableView.register(EmptyTableViewCell.self, forCellReuseIdentifier: EmptyTableViewCell.identifier)
         return tableView
     }()
     
@@ -81,6 +86,10 @@ class HomeScreen: UIView {
     public func configTableView(delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
         tableView.delegate = delegate
         tableView.dataSource = dataSource
+    }
+    
+    public func textFieldDelegate(delegate: UITextFieldDelegate) {
+        nameTextField.delegate = delegate
     }
     
     private func addElements() {
