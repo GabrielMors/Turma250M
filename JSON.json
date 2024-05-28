@@ -1,0 +1,30 @@
+// Um JSON trabalha com chave e valor (Dicionário)
+
+
+{
+    "name": "Gabriel",
+    "age": 19
+}
+
+
+
+// Para criar um objeto deve colocar as chaves {}
+// Para criar uma lista deve colocar os colchetes []
+
+{
+    "empresa": "Empresa do Gabriel",
+    "fundacao": 2010,
+    "funcionarios": 2500,
+    "departamento": [
+        {
+            "name": "Vendas",
+            "responsavel": "Gabriel"
+        },
+        {
+            "name": "RH",
+            "resposavel": "Fernando"
+        }
+    ]
+
+}
+
