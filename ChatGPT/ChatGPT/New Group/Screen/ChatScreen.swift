@@ -7,7 +7,17 @@
 
 import UIKit
 
+protocol ChatScreenProtocol: AnyObject {
+    func sendMessage(text: String)
+}
+
 class ChatScreen: UIView {
+    
+    private weak var delegate: ChatScreenProtocol?
+    
+    public func delegate(delegate: ChatScreenProtocol?) {
+        self.delegate = delegate
+    }
     
     lazy var messageInputView: UIView = {
         let view = UIView()
@@ -29,11 +39,12 @@ class ChatScreen: UIView {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.font = UIFont.systemFont(ofSize: 18)
+        textField.backgroundColor = .clear
         textField.placeholder = "Digite aqui"
         textField.autocorrectionType = .no
-        textField.borderStyle = .roundedRect
         textField.spellCheckingType = .no
         textField.keyboardType = .asciiCapable
+        textField.delegate = self
         return textField
     }()
     
@@ -49,6 +60,7 @@ class ChatScreen: UIView {
         button.addTarget(self, action: #selector(self.tappedSendButton), for: .touchUpInside)
         button.setImage(UIImage(named: "send"), for: .normal)
         button.isEnabled = false
+        button.transform = .init(scaleX: 0.8, y: 0.8)
         return button
     }()
     
@@ -58,7 +70,10 @@ class ChatScreen: UIView {
         tableView.backgroundColor = .appLight
         tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
-//        tableView.register(<#T##UINib?#>, forCellReuseIdentifier: <#T##String#>)
+        tableView.register(OutgoingTextMessageTableViewCell.self, forCellReuseIdentifier: OutgoingTextMessageTableViewCell.identifier)
+        tableView.register(IncomingTextMessageTableViewCell.self, forCellReuseIdentifier: IncomingTextMessageTableViewCell.identifier)
+        tableView.backgroundColor = .clear
+        tableView.transform = CGAffineTransform(scaleX: 1, y: -1)
         return tableView
     }()
     
@@ -68,7 +83,9 @@ class ChatScreen: UIView {
     }
     
     @objc private func tappedSendButton() {
-        print("Clicou no botao")
+        sendButton.touchAnimation()
+        delegate?.sendMessage(text: inputMessageTextField.text ?? "")
+        pushMessage()
     }
     
     override init(frame: CGRect) {
@@ -87,6 +104,12 @@ class ChatScreen: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func pushMessage() {
+        inputMessageTextField.text = ""
+        sendButton.isEnabled = false
+        sendButton.transform = .init(scaleX: 0.8, y: 0.8)
     }
     
     private func configConstraints() {
@@ -117,5 +140,34 @@ class ChatScreen: UIView {
             inputMessageTextField.heightAnchor.constraint(equalToConstant: 45),
             inputMessageTextField.centerYAnchor.constraint(equalTo: messageBarView.centerYAnchor)
         ])
+    }
+}
+
+
+extension ChatScreen: UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text as NSString? else { return false }
+        let txtAfterUpdate = text.replacingCharacters(in: range, with: string)
+        
+        if txtAfterUpdate.isEmpty {
+            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+                self.sendButton.isEnabled = false
+                self.sendButton.transform = .init(scaleX: 0.8, y: 0.8)
+            }, completion: { _ in
+            })
+        } else {
+            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+                self.sendButton.isEnabled = true
+                self.sendButton.transform = .identity
+            }, completion: { _ in
+            })
+        }
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

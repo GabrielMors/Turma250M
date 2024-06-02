@@ -31,6 +31,7 @@ class OutgoingTextMessageTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        transform = CGAffineTransform(scaleX: 1, y: -1)
         selectionStyle = .none
         backgroundColor = .background
         addElements()

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C44E6C092C0CAD16008D953D /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44E6C082C0CAD16008D953D /* UIFont+Extension.swift */; };
+		C44E6C0B2C0CAE94008D953D /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44E6C0A2C0CAE94008D953D /* UIButton+Extension.swift */; };
+		C44E6C0D2C0CB891008D953D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44E6C0C2C0CB891008D953D /* String+Extension.swift */; };
+		C44E6C102C0CCED9008D953D /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44E6C0F2C0CCED9008D953D /* ChatService.swift */; };
+		C44E6C132C0CD10E008D953D /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = C44E6C122C0CD10E008D953D /* OpenAISwift */; };
 		C4F76B842BED3E350076BC33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F76B832BED3E350076BC33 /* AppDelegate.swift */; };
 		C4F76B862BED3E350076BC33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F76B852BED3E350076BC33 /* SceneDelegate.swift */; };
 		C4F76B882BED3E350076BC33 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F76B872BED3E350076BC33 /* ChatViewController.swift */; };
@@ -20,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C44E6C082C0CAD16008D953D /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		C44E6C0A2C0CAE94008D953D /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		C44E6C0C2C0CB891008D953D /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C44E6C0F2C0CCED9008D953D /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		C4F76B802BED3E350076BC33 /* ChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F76B832BED3E350076BC33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F76B852BED3E350076BC33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,12 +48,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44E6C132C0CD10E008D953D /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C44E6C0E2C0CCE65008D953D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C44E6C0F2C0CCED9008D953D /* ChatService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		C4F76B772BED3E350076BC33 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				C4F76BA12BED67240076BC33 /* Model */,
+				C44E6C0E2C0CCE65008D953D /* Service */,
 				C4F76B9C2BED47F10076BC33 /* Utils */,
 				C4F76B972BED3FDD0076BC33 /* Chat */,
 				C4F76B992BED40010076BC33 /* Resources */,
@@ -115,6 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				C4F76B9E2BED48160076BC33 /* UIColor+Extension.swift */,
+				C44E6C082C0CAD16008D953D /* UIFont+Extension.swift */,
+				C44E6C0A2C0CAE94008D953D /* UIButton+Extension.swift */,
+				C44E6C0C2C0CB891008D953D /* String+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -152,6 +174,9 @@
 			dependencies = (
 			);
 			name = ChatGPT;
+			packageProductDependencies = (
+				C44E6C122C0CD10E008D953D /* OpenAISwift */,
+			);
 			productName = ChatGPT;
 			productReference = C4F76B802BED3E350076BC33 /* ChatGPT.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +205,9 @@
 				Base,
 			);
 			mainGroup = C4F76B772BED3E350076BC33;
+			packageReferences = (
+				C44E6C112C0CD10E008D953D /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = C4F76B812BED3E350076BC33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -207,11 +235,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4F76B882BED3E350076BC33 /* ChatViewController.swift in Sources */,
+				C44E6C0D2C0CB891008D953D /* String+Extension.swift in Sources */,
 				C4F76B842BED3E350076BC33 /* AppDelegate.swift in Sources */,
 				C4F76BA72BED71480076BC33 /* IncomingTextMessageTableViewCell.swift in Sources */,
+				C44E6C0B2C0CAE94008D953D /* UIButton+Extension.swift in Sources */,
+				C44E6C102C0CCED9008D953D /* ChatService.swift in Sources */,
 				C4F76B862BED3E350076BC33 /* SceneDelegate.swift in Sources */,
 				C4F76BA32BED67420076BC33 /* Message.swift in Sources */,
 				C4F76BA52BED6BBB0076BC33 /* OutgoingTextMessageTableViewCell.swift in Sources */,
+				C44E6C092C0CAD16008D953D /* UIFont+Extension.swift in Sources */,
 				C4F76B9B2BED405A0076BC33 /* ChatScreen.swift in Sources */,
 				C4F76B9F2BED48160076BC33 /* UIColor+Extension.swift in Sources */,
 			);
@@ -426,6 +458,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C44E6C112C0CD10E008D953D /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C44E6C122C0CD10E008D953D /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C44E6C112C0CD10E008D953D /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4F76B782BED3E350076BC33 /* Project object */;
 }

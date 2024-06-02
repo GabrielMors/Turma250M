@@ -16,14 +16,13 @@ class IncomingTextMessageTableViewCell: UITableViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .incomingColor
         view.layer.cornerRadius = 20
-        view.layer.maskedCorners =  [.layerMaxXMaxYCorner, .layerMinXMinYCorner , .layerMaxXMinYCorner]
+        view.layer.maskedCorners =  [.layerMaxXMaxYCorner, .layerMinXMinYCorner, .layerMaxXMinYCorner]
         return view
     }()
     
     lazy var messageLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "GabrielmorsGabrielmorsGabrielmorsGabrielmorsGabrielmorsGabrielmorsGabrielmorsGabrielmorsGabrielmors"
         label.textColor = .white
         label.numberOfLines = 0
         return label
@@ -31,6 +30,7 @@ class IncomingTextMessageTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        transform = CGAffineTransform(scaleX: 1, y: -1)
         selectionStyle = .none
         backgroundColor = .background
         addElements()
@@ -57,8 +57,7 @@ class IncomingTextMessageTableViewCell: UITableViewCell {
             messageLabel.bottomAnchor.constraint(equalTo: contactMessageView.bottomAnchor, constant: -15),
             messageLabel.trailingAnchor.constraint(equalTo: contactMessageView.trailingAnchor, constant: -15),
         ])
-    }
-    
+    } 
     
     public func setupCell(data: Message) {
         messageLabel.text = data.message
