@@ -1,0 +1,33 @@
+{
+    "totalValue": 3566.10,
+    "historyAccountList": [
+        {
+            "name": "Bar da Mooca",
+            "price": 250.10,
+        },
+        {
+            "name": "Bar Nuporanga",
+            "price": 150.40,
+        },
+        {
+            "name": "Bar da Mooca",
+            "price": 350.60,
+        },
+        {
+            "name": "Bar Nuporanga",
+            "price": 150.70,
+        },
+        {
+            "name": "Bar da Mooca",
+            "price": 250.10,
+        },
+        {
+            "name": "Bar Nuporanga",
+            "price": 250.70,        },
+        {
+            "name": "Buteco do Jão",
+            "price": 500.80,
+        }
+    ]
+}
+
