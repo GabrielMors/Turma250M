@@ -10,13 +10,15 @@ import XCTest
 
 final class Testes_UnitariosTests: XCTestCase {
 
-    var viewController: ViewController!
+    var viewController: Casa!
     
+    // Como se fosse o viewDidLoad do teste
     override func setUpWithError() throws {
         // Ele é utilizado em todo teste que quisermos configurar alguma variável, instanciar algum objeto ou fazer algo antes de cada teste.
-        viewController = ViewController()
+        viewController = Casa()
     }
 
+    // Como se fosse o viewDidDesappear do teste
     override func tearDownWithError() throws {
         // Sempre que precisarmos desalocar algum objeto ou fazer algo após cada teste.
         viewController = nil
@@ -24,10 +26,15 @@ final class Testes_UnitariosTests: XCTestCase {
 
     func testExample() throws {
         let totalValor = 10 + 10
-        let boleano = true
-        let boleano2 = false
         XCTAssertEqual(20, totalValor)
     }
     
+    func testExampleTwo() throws {
+        XCTAssertFalse(viewController.name == "Gabriel")
+    }
+    
+}
 
+struct Casa {
+    var name: String = "minha casa"
 }

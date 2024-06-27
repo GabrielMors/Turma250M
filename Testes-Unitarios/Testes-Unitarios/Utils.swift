@@ -20,4 +20,23 @@ class Utils {
     //Exemplo02
         return numbers.reduce(0, +) / numbers.count
     }
+    
+    static func isInteger(_ str: String) -> Bool {
+//        if let _ = Int(str) {
+//            return true
+//        } else {
+//            return false
+//        }
+        
+        return Int(str) != nil
+    }
+    
+    static func trimWhitespace(_ str: String) -> String {
+        return str.trimmingCharacters(in: .whitespaces)
+    }
+    
+    static func randomInRange(upperBound: Int) -> Int {
+        print(Int.random(in: 0...upperBound))
+        return Int.random(in: 0...upperBound)
+    }
 }
