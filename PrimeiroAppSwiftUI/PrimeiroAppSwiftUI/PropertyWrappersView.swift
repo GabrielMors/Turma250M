@@ -20,7 +20,7 @@ import SwiftUI
 
 // @Published -> é usado dentro de classes observáveis para marcar propriedades específicas como "publicamente publicadas". Quando o valor de uma propriedade marcada com @Published muda, ele notifica automaticamente os observadores, como as views, para que possam ser atualizadas.
 
-// @Environment ->  é usado para acessar valores ambientais (como tamanhos de fonte, cores, etc.) fornecidos pelo ambiente de execução do aplicativo. Isso permite que as views acessem configurações globais sem passar esses valores manualmente.
+// @Environment ->  é usado para acessar valores ambientais (como tamanhos de fonte, cores, etc...) fornecidos pelo ambiente de execução do aplicativo. Isso permite que as views acessem configurações globais sem passar esses valores manualmente.
 
 // @FetchRequest -> é usado com o Core Data para buscar dados do banco de dados. Ele aceita uma consulta e fornece os resultados como uma lista de objetos observáveis. Usado para exibir dados do banco de dados na interface.
 
