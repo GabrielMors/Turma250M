@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C45EF7702C3ACCC60005E3EA /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45EF76F2C3ACCC60005E3EA /* Binding.swift */; };
 		C4EE48172C3478B70055EBF1 /* PrimeiroAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE48162C3478B70055EBF1 /* PrimeiroAppSwiftUIApp.swift */; };
 		C4EE48192C3478B70055EBF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE48182C3478B70055EBF1 /* ContentView.swift */; };
 		C4EE481B2C3478B90055EBF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4EE481A2C3478B90055EBF1 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C45EF76F2C3ACCC60005E3EA /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		C4EE48132C3478B70055EBF1 /* PrimeiroAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeiroAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EE48162C3478B70055EBF1 /* PrimeiroAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiroAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		C4EE48182C3478B70055EBF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				C4EE48162C3478B70055EBF1 /* PrimeiroAppSwiftUIApp.swift */,
 				C4EE48182C3478B70055EBF1 /* ContentView.swift */,
 				C4EE48242C3488AC0055EBF1 /* PropertyWrappersView.swift */,
+				C45EF76F2C3ACCC60005E3EA /* Binding.swift */,
 				C4EE481A2C3478B90055EBF1 /* Assets.xcassets */,
 				C4EE481C2C3478B90055EBF1 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				C4EE48192C3478B70055EBF1 /* ContentView.swift in Sources */,
 				C4EE48172C3478B70055EBF1 /* PrimeiroAppSwiftUIApp.swift in Sources */,
 				C4EE48252C3488AD0055EBF1 /* PropertyWrappersView.swift in Sources */,
+				C45EF7702C3ACCC60005E3EA /* Binding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@ import SwiftUI
 
 // EXEMPLOS DOS MAIS UTILIZADOS:
 
-// @State -> é usado para criar uma propriedade mutável dentro de uma view. Ele permite que a view observe mudanças nessa propriedade e atualize automaticamente a interface quando ela muda. Usado principalmente para controlar o estado interno de uma view.
+// @State -> é usado para criar uma propriedade mutável dentro de uma view. Ele permite que a view observe mudanças nessa propriedade e atualize automaticamente a interface quando ela muda. Usado principalmente para controlar o estado interno de uma view. 
 
 // @Binding -> é usado para criar uma ligação entre uma propriedade de uma view pai e uma view filho. Isso permite que a view filho leia e atualize a propriedade original da view pai, mantendo-as sincronizadas. É útil quando você deseja que as mudanças em uma view filho afetem a view pai.
 
