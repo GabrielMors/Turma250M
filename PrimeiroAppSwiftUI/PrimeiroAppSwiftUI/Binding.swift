@@ -15,21 +15,23 @@ struct BindingView: View {
     @State private var isShowingChildView = false
     
     var body: some View {
-        VStack {
-            Text("Toggle Example")
-            
-            Toggle(isOn: $isToggled) {
-                Text("Toggle")
+        NavigationStack {
+            VStack {
+                Text("Toggle Example")
+                
+                Toggle(isOn: $isToggled) {
+                    Text("Toggle")
+                }
+                .padding()
+                
+                NavigationLink(destination: ChildView(isToggled: $isToggled)) {
+                    Text("Mostrar Child View")
+                        .padding()
+                        .background(Color.gray)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .foregroundStyle(.white)
+                }
             }
-            .padding()
-            
-            Button("Show Child View") {
-                self.isShowingChildView.toggle()
-            }
-            .sheet(isPresented: $isShowingChildView, content: {
-                ChildView(isToggled: $isToggled)
-            })
-            
         }
     }
 }
