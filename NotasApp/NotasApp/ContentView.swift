@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     
     @StateObject var controller = NotesController()// Observa suas mudanças
-    
     @State var isGoAddNote: Bool = false
     
     var body: some View {
@@ -18,7 +17,7 @@ struct ContentView: View {
             List {
                 ForEach($controller.notes) { $note in
                     NavigationLink {
-                        //Outra tela
+                        NotesDetailView(note: $note)
                     } label: {
                         HStack {
                             Image(systemName: "pencil")
@@ -45,7 +44,7 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $isGoAddNote) {
-                // Proxima tela
+                AddNoteView(controller: controller)
             }
         }
     }
