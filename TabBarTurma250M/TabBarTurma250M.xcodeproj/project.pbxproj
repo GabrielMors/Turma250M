@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4E255312BCC18AF00FDD25F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E255302BCC18AF00FDD25F /* AppDelegate.swift */; };
+		C4E255332BCC18AF00FDD25F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E255322BCC18AF00FDD25F /* SceneDelegate.swift */; };
+		C4E255352BCC18AF00FDD25F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E255342BCC18AF00FDD25F /* TabBarController.swift */; };
+		C4E255382BCC18AF00FDD25F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C4E255372BCC18AF00FDD25F /* Base */; };
+		C4E2553A2BCC18B200FDD25F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E255392BCC18B200FDD25F /* Assets.xcassets */; };
+		C4E2553D2BCC18B200FDD25F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C4E2553C2BCC18B200FDD25F /* Base */; };
+		C4E255472BCC19F300FDD25F /* Tela01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E255462BCC19F300FDD25F /* Tela01ViewController.swift */; };
+		C4E255492BCC19FF00FDD25F /* Tela01ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E255482BCC19FF00FDD25F /* Tela01ViewController.storyboard */; };
+		C4E2554D2BCC1A2200FDD25F /* Tela02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2554C2BCC1A2200FDD25F /* Tela02ViewController.swift */; };
+		C4E2554F2BCC1A2B00FDD25F /* Tela02ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E2554E2BCC1A2B00FDD25F /* Tela02ViewController.storyboard */; };
+		C4E255512BCC1A3D00FDD25F /* Tela03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E255502BCC1A3D00FDD25F /* Tela03ViewController.swift */; };
+		C4E255532BCC1A4700FDD25F /* Tela03ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E255522BCC1A4700FDD25F /* Tela03ViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C4E2552D2BCC18AF00FDD25F /* TabBarTurma250M.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarTurma250M.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E255302BCC18AF00FDD25F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4E255322BCC18AF00FDD25F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C4E255342BCC18AF00FDD25F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C4E255372BCC18AF00FDD25F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4E255392BCC18B200FDD25F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4E2553C2BCC18B200FDD25F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4E2553E2BCC18B200FDD25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4E255462BCC19F300FDD25F /* Tela01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela01ViewController.swift; sourceTree = "<group>"; };
+		C4E255482BCC19FF00FDD25F /* Tela01ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela01ViewController.storyboard; sourceTree = "<group>"; };
+		C4E2554C2BCC1A2200FDD25F /* Tela02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02ViewController.swift; sourceTree = "<group>"; };
+		C4E2554E2BCC1A2B00FDD25F /* Tela02ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela02ViewController.storyboard; sourceTree = "<group>"; };
+		C4E255502BCC1A3D00FDD25F /* Tela03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03ViewController.swift; sourceTree = "<group>"; };
+		C4E255522BCC1A4700FDD25F /* Tela03ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela03ViewController.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4E2552A2BCC18AF00FDD25F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4E255242BCC18AF00FDD25F = {
+			isa = PBXGroup;
+			children = (
+				C4E2552F2BCC18AF00FDD25F /* TabBarTurma250M */,
+				C4E2552E2BCC18AF00FDD25F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4E2552E2BCC18AF00FDD25F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4E2552D2BCC18AF00FDD25F /* TabBarTurma250M.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4E2552F2BCC18AF00FDD25F /* TabBarTurma250M */ = {
+			isa = PBXGroup;
+			children = (
+				C4E2554B2BCC1A0900FDD25F /* Tela03 */,
+				C4E2554A2BCC1A0200FDD25F /* Tela02 */,
+				C4E255452BCC19DA00FDD25F /* Tela01 */,
+				C4E255442BCC19CA00FDD25F /* TabBar */,
+				C4E255362BCC18AF00FDD25F /* Main.storyboard */,
+				C4E255542BCC1A7700FDD25F /* Resources */,
+				C4E2553E2BCC18B200FDD25F /* Info.plist */,
+			);
+			path = TabBarTurma250M;
+			sourceTree = "<group>";
+		};
+		C4E255442BCC19CA00FDD25F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C4E255342BCC18AF00FDD25F /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C4E255452BCC19DA00FDD25F /* Tela01 */ = {
+			isa = PBXGroup;
+			children = (
+				C4E255462BCC19F300FDD25F /* Tela01ViewController.swift */,
+				C4E255482BCC19FF00FDD25F /* Tela01ViewController.storyboard */,
+			);
+			path = Tela01;
+			sourceTree = "<group>";
+		};
+		C4E2554A2BCC1A0200FDD25F /* Tela02 */ = {
+			isa = PBXGroup;
+			children = (
+				C4E2554C2BCC1A2200FDD25F /* Tela02ViewController.swift */,
+				C4E2554E2BCC1A2B00FDD25F /* Tela02ViewController.storyboard */,
+			);
+			path = Tela02;
+			sourceTree = "<group>";
+		};
+		C4E2554B2BCC1A0900FDD25F /* Tela03 */ = {
+			isa = PBXGroup;
+			children = (
+				C4E255502BCC1A3D00FDD25F /* Tela03ViewController.swift */,
+				C4E255522BCC1A4700FDD25F /* Tela03ViewController.storyboard */,
+			);
+			path = Tela03;
+			sourceTree = "<group>";
+		};
+		C4E255542BCC1A7700FDD25F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4E255302BCC18AF00FDD25F /* AppDelegate.swift */,
+				C4E255322BCC18AF00FDD25F /* SceneDelegate.swift */,
+				C4E255392BCC18B200FDD25F /* Assets.xcassets */,
+				C4E2553B2BCC18B200FDD25F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4E2552C2BCC18AF00FDD25F /* TabBarTurma250M */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4E255412BCC18B200FDD25F /* Build configuration list for PBXNativeTarget "TabBarTurma250M" */;
+			buildPhases = (
+				C4E255292BCC18AF00FDD25F /* Sources */,
+				C4E2552A2BCC18AF00FDD25F /* Frameworks */,
+				C4E2552B2BCC18AF00FDD25F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabBarTurma250M;
+			productName = TabBarTurma250M;
+			productReference = C4E2552D2BCC18AF00FDD25F /* TabBarTurma250M.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4E255252BCC18AF00FDD25F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					C4E2552C2BCC18AF00FDD25F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = C4E255282BCC18AF00FDD25F /* Build configuration list for PBXProject "TabBarTurma250M" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4E255242BCC18AF00FDD25F;
+			productRefGroup = C4E2552E2BCC18AF00FDD25F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4E2552C2BCC18AF00FDD25F /* TabBarTurma250M */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4E2552B2BCC18AF00FDD25F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E2554F2BCC1A2B00FDD25F /* Tela02ViewController.storyboard in Resources */,
+				C4E255492BCC19FF00FDD25F /* Tela01ViewController.storyboard in Resources */,
+				C4E2553A2BCC18B200FDD25F /* Assets.xcassets in Resources */,
+				C4E2553D2BCC18B200FDD25F /* Base in Resources */,
+				C4E255532BCC1A4700FDD25F /* Tela03ViewController.storyboard in Resources */,
+				C4E255382BCC18AF00FDD25F /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4E255292BCC18AF00FDD25F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E255352BCC18AF00FDD25F /* TabBarController.swift in Sources */,
+				C4E255312BCC18AF00FDD25F /* AppDelegate.swift in Sources */,
+				C4E255332BCC18AF00FDD25F /* SceneDelegate.swift in Sources */,
+				C4E255512BCC1A3D00FDD25F /* Tela03ViewController.swift in Sources */,
+				C4E255472BCC19F300FDD25F /* Tela01ViewController.swift in Sources */,
+				C4E2554D2BCC1A2200FDD25F /* Tela02ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4E255362BCC18AF00FDD25F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4E255372BCC18AF00FDD25F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4E2553B2BCC18B200FDD25F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4E2553C2BCC18B200FDD25F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4E2553F2BCC18B200FDD25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4E255402BCC18B200FDD25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4E255422BCC18B200FDD25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TabBarTurma250M/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GabrielMors.TabBarTurma250M;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4E255432BCC18B200FDD25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TabBarTurma250M/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GabrielMors.TabBarTurma250M;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4E255282BCC18AF00FDD25F /* Build configuration list for PBXProject "TabBarTurma250M" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E2553F2BCC18B200FDD25F /* Debug */,
+				C4E255402BCC18B200FDD25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4E255412BCC18B200FDD25F /* Build configuration list for PBXNativeTarget "TabBarTurma250M" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E255422BCC18B200FDD25F /* Debug */,
+				C4E255432BCC18B200FDD25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4E255252BCC18AF00FDD25F /* Project object */;
+}
